@@ -1,0 +1,67 @@
+小知識
+
+How to enable automatic escaping while pasting text as String literal in Eclipse :
+
+Here is the steps you need to perform to enable this setting in Eclipse which will automatically provide escaping required in Java for special characters like quotes, slashes etc.
+ 
+1. Open Eclipse IDE
+2. Go to Windows --> Preferences --> Java --> Editor --> Typing 
+3) check the check box "Escape text when pasting into a String literal" on section "In String literals.
+
+
+Read more: http://javarevisited.blogspot.com/2012/12/how-to-escape-text-when-pasting-as-String-Eclipse-tips.html#ixzz4FKdikAWL
+
+
+//////////////////
+
+to make TableView able to track data changes you need to expose relevant fields as JavaFX properties. Add next methods to Person class from tutorial:
+
+    public SimpleStringProperty firstNameProperty() {
+        return firstName;
+    }
+
+    public SimpleStringProperty lastNameProperty() {
+        return lastName;
+    }
+
+    public SimpleStringProperty emailProperty() {
+        return email;
+    }
+
+
+/////////////////////////////////////////////////////////////////
+
+在blender中使用平面來切割物體
+
+假設妳要用平面C來切割物體A
+
+1.先把A複製一份，產生同樣的物體B (不要移動位置)
+2.A對C進行布林差集
+3.B對C進行布林聯集
+
+/////////////////////////////////////////////////////////////////////////
+
+javascript中 == 和 === 的差別
+
+在相同類別下兩者相等
+如果不同類別，===會直接回傳False,==則會試著轉型再比較
+
+'' == '0'           // false
+0 == ''             // true
+0 == '0'            // true
+
+false == 'false'    // false
+false == '0'        // true
+
+false == undefined  // false
+false == null       // false
+null == undefined   // true
+
+' \t\r\n ' == 0     // true
+
+建議：盡量少用==，用===吧
+
+/////////////////////////////////////////////////////////////////////////
+blender split edge
+
+Select your edge, open the edge menu with Ctrl+E or the specials menu with W and select "subdivide"

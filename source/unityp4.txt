@@ -1,0 +1,20 @@
+
+這幾天在嘗試把Unity專案家道版本控制系統裡。原本想說直接用Git就好了，但稍微查了一下資料後，發現Git處理大容量binary file
+時似乎容易出問題，並且Unity的手冊上也提到兩種它支援的版本控制系統──perforce跟Plastic SCM，最後決定先嘗試perforce。
+
+
+###下載 perforce###
+
+首先到perforce的網站下載它的客戶端程式，perforce的客戶端有很多種，包含純文字command line的p4、有圖形化介面的p4v、可和
+eclipse IDE結合的p4eclipse等等，在這裡我們下載的是p4v，其實在安裝p4v的過程裡也可以連同基本的command line一起安裝。
+
+除了客戶端的程式之外，你還很有可能會需要下載perforce的server端程式。perforce的client是不能獨自運作的，一定要有server的
+管理，所以就算你只有在自己的電腦上使用，你也需要安裝perforce的server，然後再用
+
+那麼，如果多人要在線上合作該怎麼辦呢?那就得把perforce的server架在所有人都連的到的地方了。幸運的是，就像git有git hub提供
+線上的空間，perforce也有類似的
+
+
+###安裝###
+
+安裝好之後
